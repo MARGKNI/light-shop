@@ -26,3 +26,21 @@ npm run dev
 ├── App.jsx
 ├── main.jsx
 ├── index.css
+
+Деплой на GitHub Pages
+https://levelup.gitconnected.com/deploy-your-vite-app-to-github-pages-a-lazy-devs-guide-37b0b472fa35
+
+1. Изменить vite.config.js добавить в defineConfig
+base: "/light-shop/"
+
+2. Установить gh-pages
+npm install gh-pages --save-dev
+
+3. Изменить package.json, секция scripts, добавить
+
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+
+4. Изменить package.json, секция root (где "name"), добавить
+
+  "homepage": "https://margkni.github.io/light-shop/"
