@@ -44,3 +44,5 @@ npm install gh-pages --save-dev
 4. Изменить package.json, секция root (где "name"), добавить
 
   "homepage": "https://margkni.github.io/light-shop/"
+
+5. В настройках репозитория указать branch gh-pages
